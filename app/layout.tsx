@@ -1,20 +1,20 @@
 import type React from "react";
 import type { Metadata } from "next";
-import { Space_Grotesk, Kalam } from "next/font/google";
+import localFont from "next/font/local";
 import { ThemeProvider } from "@/components/theme-provider";
 import "./globals.css";
 
-const spaceGrotesk = Space_Grotesk({
-  subsets: ["latin"],
+// Define local fonts
+const primaryFont = localFont({
+  src: "./fonts/PrimaryFont.woff2",
   display: "swap",
-  variable: "--font-grotesk",
+  variable: "--font-primary",
 });
 
-const kalam = Kalam({
-  subsets: ["latin"],
-  weight: ["300", "400", "700"],
+const secondaryFont = localFont({
+  src: "./fonts/SecondaryFont.woff2",
   display: "swap",
-  variable: "--font-handwriting",
+  variable: "--font-secondary",
 });
 
 export const metadata: Metadata = {
@@ -32,17 +32,9 @@ export default function RootLayout({
     <html
       lang="en"
       suppressHydrationWarning
-      className={`${spaceGrotesk.variable} ${kalam.variable}`}
+      className={`${primaryFont.variable} ${secondaryFont.variable}`}
     >
-      <head>
-        <style>{`
-html {
-  font-family: ${spaceGrotesk.style.fontFamily};
-  --font-sans: ${spaceGrotesk.style.fontFamily};
-  --font-mono: ui-monospace, SFMono-Regular, "SF Mono", Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-}
-        `}</style>
-      </head>
+      <head />
       <body>
         <ThemeProvider
           attribute="class"
