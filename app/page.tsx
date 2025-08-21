@@ -86,7 +86,7 @@ export default function Portfolio() {
   return (
     <div className="min-h-screen bg-background text-foreground scroll-smooth">
       {/* Header with theme toggle */}
-      <header className="flex justify-end p-6">
+      <header className="flex justify-end p-8">
         <Button
           variant="ghost"
           size="icon"
@@ -103,69 +103,37 @@ export default function Portfolio() {
       <main className="max-w-3xl mx-auto px-6 pb-16">
         {/* Hero section */}
         <div
-          className={`mb-12 transition-all duration-1000 ${
+          className={`mb-6 transition-all duration-1000 ${
             isLoaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
           }`}
         >
-          <h1 className="text-2xl font-normal mb-4 leading-relaxed">
-            i'm{" "}
-            <span className="font-medium relative group cursor-pointer">
+          <h1 className="text-4xl font-light mb-4 leading-relaxed">
+            hola, i'm{" "}
+            <span className="font-semibold relative group cursor-pointer">
               remiel
-              <div className="absolute -top-20 left-1/2 transform -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-all duration-300 pointer-events-none z-20">
-                <div className="relative">
-                  <div className="absolute inset-0 bg-blue-400/20 blur-lg rounded-lg"></div>
-                  <div className="relative bg-white dark:bg-gray-100 p-3 shadow-2xl rounded-lg border-2 border-white">
-                    <img
-                      src="/professional-headshot.png"
-                      alt="remiel"
-                      className="w-16 h-16 object-cover rounded-md"
-                    />
-                    <div className="absolute -bottom-2 -right-2 bg-gray-800 text-white text-xs px-2 py-1 rounded-full whitespace-nowrap">
-                      that's me!
-                    </div>
-                  </div>
-                </div>
-              </div>
             </span>
-            , engineer* at the intersection of design & development.
           </h1>
-          <p className="text-muted-foreground text-sm leading-relaxed">
-            * i write about things i'm learning,{" "}
-            <span className="bg-green-100 dark:bg-green-900/30 px-1 rounded text-green-700 dark:text-green-300">
-              reflections ↗
-            </span>{" "}
-            and thoughts on life and{" "}
-            <span className="bg-green-100 dark:bg-green-900/30 px-1 rounded text-green-700 dark:text-green-300">
-              tech ↗
-            </span>
+          <p className="text-muted-foreground  text-2XL text-justify leading-relaxed">
+            a fullstack developer, designer at heart, and ex microsoft student
+            ambassador. i build cool stuff, explain tech without the jargon, and
+            occasionally wonder if my Wi-Fi antenna research was just the
+            universe trolling me.
+          </p>
+          <p className="text-muted-foreground text-justify  text-2XL leading-relaxed">
+            you can find me across the web sharing projects, ideas, and lessons
+            learned. whether it’s code on github, thoughts on my blog, or
+            updates on linkedin, these links are the best way to connect.
           </p>
         </div>
-
-        {/* Navigation */}
         <div
           className={`mb-8 transition-all duration-1000 delay-300 ${
             isLoaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
           }`}
         >
-          <div className="flex flex-wrap gap-4 text-sm">
-            <a
-              href="/resume"
-              className="text-muted-foreground hover:text-foreground transition-colors"
-            >
-              resume/cv <span className="text-muted-foreground">↗</span>
-            </a>
-            <a
-              href="/blog"
-              className="text-muted-foreground hover:text-foreground transition-colors"
-            >
-              blog <span className="text-muted-foreground">↗</span>
-            </a>
-            <Link
-              href="/guestbook"
-              className="text-muted-foreground hover:text-foreground transition-colors"
-            >
-              guestbook <span className="text-muted-foreground">↗</span>
-            </Link>
+          <div className="flex flex-wrap gap-4 font-semibold text-1xl text-green-600">
+            <a href="/resume">resume/cv</a>
+            <a href="/blog">blog</a>
+            <Link href="/guestbook">guestbook</Link>
           </div>
         </div>
 
@@ -175,10 +143,10 @@ export default function Portfolio() {
             isLoaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
           }`}
         >
-          <h2 className="text-sm font-medium mb-6 text-foreground">
+          <h2 className="text-sm font-medium mb-2 text-foreground">
             listening to
           </h2>
-          {/* Responsive layout - row on desktop, carousel on mobile */}
+
           <div className="hidden sm:flex sm:flex-row sm:gap-6">
             {songs.map((song, index) => (
               <div key={index} className="flex items-center gap-2">
@@ -194,7 +162,7 @@ export default function Portfolio() {
                   rel="noopener noreferrer"
                   className="font-medium text-sm hover:text-green-600 dark:hover:text-green-400 transition-colors"
                 >
-                  {song.title} <span className="text-muted-foreground">↗</span>
+                  {song.title}
                 </a>
               </div>
             ))}
@@ -214,7 +182,6 @@ export default function Portfolio() {
                 className="font-medium text-sm hover:text-green-600 dark:hover:text-green-400 transition-colors"
               >
                 {songs[currentSongIndex].title}{" "}
-                <span className="text-muted-foreground">↗</span>
               </a>
             </div>
           </div>
