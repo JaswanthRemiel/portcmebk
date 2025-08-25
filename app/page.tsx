@@ -14,41 +14,45 @@ export default function Portfolio() {
 
   const songs = [
     {
-      title: "monica - coolie",
-      url: "https://open.spotify.com/track/2t1pEpxPz91KldW7C0FyZv?si=5a20ce63655147bc",
+      title: "swimming pools - kendrick lamar",
+      url: "https://open.spotify.com/track/7iWa5vOdY5KiYEJ0aJZqwj?si=example1",
     },
     {
-      title: "espresso - sabrina",
-      url: "https://open.spotify.com/track/2qSkIjg1o9h3YT9RAgYN75?si=2be37c1fa4364e94",
+      title: "blinding lights - the weeknd",
+      url: "https://open.spotify.com/track/0VjIjW4GlUZAMYd2vXMi3b?si=example2",
+    },
+    {
+      title: "good 4 u - olivia rodrigo",
+      url: "https://open.spotify.com/track/4ZtFanR9U6ndgddUvNcjcG?si=example3",
     },
   ];
   const workExperience = [
     {
-      id: "vercel",
-      company: "Vercel",
-      logo: "V",
-      title: "Senior Frontend Engineer",
-      period: "2023 - Present",
+      id: "microsoft",
+      company: "Microsoft",
+      logo: "M",
+      title: "Student Ambassador",
+      period: "2022 - 2023",
       description:
-        "Leading the development of next-generation web applications using React, Next.js, and modern deployment strategies. Collaborated with design teams to create seamless user experiences and optimized performance across global edge networks. Mentored junior developers and contributed to open-source projects that serve millions of developers worldwide.",
+        "Served as Microsoft Student Ambassador, promoting Microsoft technologies and organizing technical workshops for fellow students. Conducted sessions on cloud computing, web development, and emerging technologies. Built connections within the developer community and gained valuable experience in public speaking and technical evangelism.",
     },
     {
-      id: "stripe",
-      company: "Stripe",
-      logo: "S",
+      id: "freelance",
+      company: "Freelance",
+      logo: "F",
       title: "Full Stack Developer",
-      period: "2021 - 2023",
+      period: "2021 - Present",
       description:
-        "Built and maintained critical payment infrastructure serving thousands of businesses globally. Developed robust APIs, implemented security protocols, and created developer tools that simplified payment integration. Worked closely with product teams to launch new features and improve developer experience across multiple programming languages.",
+        "Working on various web development projects including full-stack applications, responsive websites, and modern web solutions. Specializing in React, Next.js, Node.js, and modern deployment strategies. Focused on creating user-friendly interfaces and scalable backend architectures for diverse client needs.",
     },
     {
-      id: "startup",
-      company: "TechFlow",
-      logo: "T",
-      title: "Founding Engineer",
-      period: "2019 - 2021",
+      id: "research",
+      company: "University Research",
+      logo: "R",
+      title: "Research Assistant",
+      period: "2020 - 2021",
       description:
-        "As one of the first engineers, I architected and built the entire platform from ground up using modern web technologies. Established engineering practices, hired and mentored the initial development team, and scaled the application to handle thousands of concurrent users. Led technical decisions that enabled rapid growth and successful funding rounds.",
+        "Conducted research on Wi-Fi antenna technologies and wireless communication systems. Gained hands-on experience with RF engineering concepts, antenna design, and signal analysis. Contributed to research papers and learned valuable problem-solving skills in the telecommunications domain.",
     },
   ];
   useEffect(() => {
@@ -207,12 +211,12 @@ export default function Portfolio() {
                   className="block"
                 >
                   <h3 className="font-medium text-sm mb-1 hover:text-green-600 dark:hover:text-green-400 transition-colors">
-                    building scalable react applications{" "}
+                    my journey as a microsoft student ambassador{" "}
                     <span className="text-muted-foreground">↗</span>
                   </h3>
                   <p className="text-xs text-muted-foreground leading-relaxed">
-                    lessons learned from architecting large-scale frontend
-                    applications and managing state complexity.
+                    experiences, learnings, and community building through the
+                    microsoft student ambassador program.
                   </p>
                 </a>
               </div>
@@ -230,12 +234,12 @@ export default function Portfolio() {
                   className="block"
                 >
                   <h3 className="font-medium text-sm mb-1 hover:text-green-600 dark:hover:text-green-400 transition-colors">
-                    web3 development fundamentals{" "}
+                    from wi-fi research to web development{" "}
                     <span className="text-muted-foreground">↗</span>
                   </h3>
                   <p className="text-xs text-muted-foreground leading-relaxed">
-                    a practical guide to blockchain development, smart
-                    contracts, and decentralized applications.
+                    how my background in antenna research led me to discover
+                    my passion for web technologies and development.
                   </p>
                 </a>
               </div>
@@ -253,12 +257,12 @@ export default function Portfolio() {
                   className="block"
                 >
                   <h3 className="font-medium text-sm mb-1 hover:text-green-600 dark:hover:text-green-400 transition-colors">
-                    design systems for developers{" "}
+                    building better developer experiences{" "}
                     <span className="text-muted-foreground">↗</span>
                   </h3>
                   <p className="text-xs text-muted-foreground leading-relaxed">
-                    bridging the gap between design and development through
-                    systematic component architecture.
+                    thoughts on creating intuitive interfaces and tools that
+                    make developers' lives easier and more productive.
                   </p>
                 </a>
               </div>
@@ -342,20 +346,27 @@ export default function Portfolio() {
                     />
                   </div>
                 </div>
-                <h3 className="font-medium text-sm mb-1">
-                  blogging website ( full stack ){" "}
-                  <span className="text-muted-foreground">↗</span>
-                </h3>
-                <p className="text-xs text-muted-foreground leading-relaxed">
-                  a blogging site for exploring code, sharing knowledge, and
-                  building the future.
-                </p>
+                <a
+                  href="https://github.com/JaswanthRemiel"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block"
+                >
+                  <h3 className="font-medium text-sm mb-1">
+                    personal portfolio website{" "}
+                    <span className="text-muted-foreground">↗</span>
+                  </h3>
+                  <p className="text-xs text-muted-foreground leading-relaxed">
+                    this very website - a modern, responsive portfolio built with
+                    next.js, tailwind css, and thoughtful ux design.
+                  </p>
+                </a>
               </div>
             </div>
 
             <div className="flex gap-4 hover:translate-x-1 transition-transform duration-200 group">
               <div className="w-8 h-8 bg-muted rounded flex items-center justify-center text-xs">
-                {}
+                🎓
               </div>
               <div className="relative">
                 <div className="absolute -top-20 left-0 opacity-0 group-hover:opacity-100 transition-all duration-300 pointer-events-none z-20">
@@ -367,35 +378,44 @@ export default function Portfolio() {
                     />
                   </div>
                 </div>
-                <h3 className="font-medium text-sm mb-1">
-                  learn web dev <span className="text-muted-foreground">↗</span>
-                </h3>
-                <p className="text-xs text-muted-foreground leading-relaxed">
-                  a basic roadmap and resources for learning web development.
-                </p>
+                <a
+                  href="https://github.com/JaswanthRemiel"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block"
+                >
+                  <h3 className="font-medium text-sm mb-1">
+                    student workshop materials <span className="text-muted-foreground">↗</span>
+                  </h3>
+                  <p className="text-xs text-muted-foreground leading-relaxed">
+                    educational resources and workshop content created during my
+                    time as a microsoft student ambassador.
+                  </p>
+                </a>
               </div>
             </div>
 
             <div className="flex gap-4 hover:translate-x-1 transition-transform duration-200 group">
               <div className="w-8 h-8 bg-muted rounded flex items-center justify-center text-xs font-medium">
-                T
+                📡
               </div>
               <div className="relative">
                 <div className="absolute -top-20 left-0 opacity-0 group-hover:opacity-100 transition-all duration-300 pointer-events-none z-20">
                   <div className="bg-white dark:bg-gray-100 p-2 shadow-xl rounded-lg">
                     <img
                       src="/question-answer-platform.png"
-                      alt="Ask me anything"
+                      alt="Research project"
                       className="w-32 h-18 object-cover rounded-md shadow-md"
                     />
                   </div>
                 </div>
                 <h3 className="font-medium text-sm mb-1">
-                  ask me anything{" "}
-                  <span className="text-muted-foreground">↗</span>
+                  wi-fi antenna research{" "}
+                  <span className="text-muted-foreground">📊</span>
                 </h3>
                 <p className="text-xs text-muted-foreground leading-relaxed">
-                  for getting all the doubts and question at one place.
+                  academic research project on antenna design and wireless
+                  communication optimization - my pre-web development journey.
                 </p>
               </div>
             </div>
@@ -473,25 +493,31 @@ export default function Portfolio() {
           <h2 className="text-sm font-medium mb-4 text-foreground">contact</h2>
           <div className="flex flex-wrap gap-4 sm:gap-6 text-sm mb-4">
             <a
-              href="#"
+              href="https://twitter.com/jaswanthremiel"
+              target="_blank"
+              rel="noopener noreferrer"
               className="text-muted-foreground hover:text-foreground transition-colors"
             >
               twitter / x
             </a>
             <a
-              href="#"
+              href="https://github.com/JaswanthRemiel"
+              target="_blank"
+              rel="noopener noreferrer"
               className="text-muted-foreground hover:text-foreground transition-colors"
             >
               github
             </a>
             <a
-              href="#"
+              href="https://linkedin.com/in/jaswanthremiel"
+              target="_blank"
+              rel="noopener noreferrer"
               className="text-muted-foreground hover:text-foreground transition-colors"
             >
               linkedin
             </a>
             <a
-              href="#"
+              href="mailto:jaswanthremiel@gmail.com"
               className="text-muted-foreground hover:text-foreground transition-colors"
             >
               say hello
