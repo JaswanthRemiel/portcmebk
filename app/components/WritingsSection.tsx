@@ -73,8 +73,8 @@ export default function WritingsSection({ isLoaded }: WritingsSectionProps) {
                 <span className="text-muted-foreground">↗</span>
               </h3>
               <p className="text-xs text-muted-foreground leading-relaxed">
-                thoughts on creating intuitive interfaces and tools that
-                make developers' lives easier and more productive.
+                thoughts on creating intuitive interfaces and tools that make
+                developers' lives easier and more productive.
               </p>
             </a>
           </div>

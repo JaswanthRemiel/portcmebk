@@ -4,7 +4,11 @@ interface ContactSectionProps {
   formatTime: (date: Date) => string;
 }
 
-export default function ContactSection({ isLoaded, visitorTime, formatTime }: ContactSectionProps) {
+export default function ContactSection({
+  isLoaded,
+  visitorTime,
+  formatTime,
+}: ContactSectionProps) {
   return (
     <section
       className={`mb-12 transition-all duration-1000 delay-800 ${

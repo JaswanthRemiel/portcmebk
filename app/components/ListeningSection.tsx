@@ -9,16 +9,18 @@ interface ListeningSectionProps {
   currentSongIndex: number;
 }
 
-export default function ListeningSection({ isLoaded, songs, currentSongIndex }: ListeningSectionProps) {
+export default function ListeningSection({
+  isLoaded,
+  songs,
+  currentSongIndex,
+}: ListeningSectionProps) {
   return (
     <section
       className={`mb-12 transition-all duration-1000 delay-325 ${
         isLoaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
       }`}
     >
-      <h2 className="text-sm font-medium mb-2 text-foreground">
-        listening to
-      </h2>
+      <h2 className="text-sm font-medium mb-2 text-foreground">listening to</h2>
 
       <div className="hidden sm:flex sm:flex-row sm:gap-6">
         {songs.map((song, index) => (

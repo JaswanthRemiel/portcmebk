@@ -36,8 +36,8 @@ export default function ProjectsSection({ isLoaded }: ProjectsSectionProps) {
                 <span className="text-muted-foreground">↗</span>
               </h3>
               <p className="text-xs text-muted-foreground leading-relaxed">
-                this very website - a modern, responsive portfolio built
-                with next.js, tailwind css, and thoughtful ux design.
+                this very website - a modern, responsive portfolio built with
+                next.js, tailwind css, and thoughtful ux design.
               </p>
             </a>
           </div>

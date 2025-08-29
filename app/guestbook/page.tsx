@@ -9,10 +9,10 @@ import { Textarea } from "@/components/ui/textarea";
 import { Moon, Sun, ArrowLeft } from "lucide-react";
 import { useTheme } from "next-themes";
 import Link from "next/link";
-import { supabase } from "@/lib/supabase/client";
+import { databases } from "@/lib/appwrite/client";
 
 interface GuestbookEntry {
-  id: number;
+  $id: string;
   name: string;
   message: string;
   created_at: string;
@@ -33,17 +33,18 @@ export default function Guestbook() {
   const fetchEntries = async () => {
     setIsLoading(true);
     try {
-      const { data, error } = await supabase
-        .from("guestbook")
-        .select("*")
-        .order("created_at", { ascending: false });
-
-      if (error) {
-        console.error("Error fetching entries:", error);
-        return;
-      }
-
-      setEntries(data || []);
+      const response = await databases.listDocuments(
+        "68a4c60b003b1405e5c5",
+        "entries"
+      );
+      setEntries(
+        (response.documents || []).map((doc) => ({
+          $id: doc.$id,
+          name: doc.name,
+          message: doc.message,
+          created_at: doc.$createdAt,
+        }))
+      );
     } catch (error) {
       console.error("Error fetching entries:", error);
     } finally {
@@ -57,27 +58,24 @@ export default function Guestbook() {
 
     setIsSubmitting(true);
     try {
-      const { data, error } = await supabase
-        .from("guestbook")
-        .insert([
-          {
-            name: name.trim(),
-            message: message.trim(),
-          },
-        ])
-        .select();
-
-      if (error) {
-        console.error("Error submitting entry:", error);
-        return;
-      }
-
-      // Add the new entry to the top of the list
-      if (data && data[0]) {
-        setEntries([data[0], ...entries]);
-      }
-
-      // Clear the form
+      const response = await databases.createDocument(
+        "68a4c60b003b1405e5c5",
+        "entries",
+        "unique()",
+        {
+          name: name.trim(),
+          message: message.trim(),
+        }
+      );
+      setEntries([
+        {
+          $id: response.$id,
+          name: response.name,
+          message: response.message,
+          created_at: response.$createdAt,
+        },
+        ...entries,
+      ]);
       setName("");
       setMessage("");
     } catch (error) {

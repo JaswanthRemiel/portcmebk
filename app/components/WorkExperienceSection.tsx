@@ -14,11 +14,11 @@ interface WorkExperienceSectionProps {
   toggleWorkExpansion: (workId: string) => void;
 }
 
-export default function WorkExperienceSection({ 
-  isLoaded, 
-  workExperience, 
-  expandedWork, 
-  toggleWorkExpansion 
+export default function WorkExperienceSection({
+  isLoaded,
+  workExperience,
+  expandedWork,
+  toggleWorkExpansion,
 }: WorkExperienceSectionProps) {
   return (
     <section
@@ -49,9 +49,7 @@ export default function WorkExperienceSection({
                     <h3 className="text-sm font-medium group-hover:text-green-600 dark:group-hover:text-green-400 transition-colors">
                       {work.title}
                     </h3>
-                    <span className="text-xs text-muted-foreground">
-                      at
-                    </span>
+                    <span className="text-xs text-muted-foreground">at</span>
                     <span className="text-sm text-muted-foreground">
                       {work.company}
                     </span>

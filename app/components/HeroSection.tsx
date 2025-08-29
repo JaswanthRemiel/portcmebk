@@ -22,13 +22,13 @@ export default function HeroSection({ isLoaded }: HeroSectionProps) {
         <p className="text-shadow-muted-foreground font-semibold text-justify  text-2XL leading-relaxed">
           a fullstack developer, *designer at heart, and ex microsoft student
           ambassador. i build cool stuff, explain tech without the jargon, and
-          occasionally wonder if my Wi-Fi antenna research was just the
-          universe trolling me.
+          occasionally wonder if my Wi-Fi antenna research was just the universe
+          trolling me.
         </p>
         <p className="text-shadow-muted-foreground font-semibold text-justify  text-2XL leading-relaxed">
           you can find me across the web sharing projects, ideas, and lessons
-          learned. whether it's code on github, thoughts on my blog, or
-          updates on linkedin, these links are the best way to connect.
+          learned. whether it's code on github, thoughts on my blog, or updates
+          on linkedin, these links are the best way to connect.
         </p>
       </div>
       <div
