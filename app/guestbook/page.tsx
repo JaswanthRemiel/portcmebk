@@ -180,7 +180,7 @@ export default function Guestbook() {
           ) : (
             <div className="space-y-6">
               {entries.map((entry) => (
-                <div key={entry.id} className="border-l-2 border-muted pl-4">
+                <div key={entry.$id} className="border-l-2 border-muted pl-4">
                   <div className="flex items-center gap-2 mb-2">
                     <span className="font-medium text-sm">{entry.name}</span>
                     <span className="text-xs text-muted-foreground">

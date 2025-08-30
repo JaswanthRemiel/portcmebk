@@ -170,3 +170,16 @@
 .font-handwriting {
   font-family: var(--font-handwriting);
 }
+.font-primary {
+  font-family: var(--font-primary);
+}
+.font-secondary {
+  font-family: var(--font-secondary);
+}
+.font-advercase-bold {
+  font-family: var(--font-advercase-bold);
+}
+.font-advercase-regular {
+  font-family: var(--font-advercase-regular);
+}
+

@@ -13,10 +13,10 @@ export default function HeroSection({ isLoaded }: HeroSectionProps) {
           isLoaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
         }`}
       >
-        <h1 className="text-4xl font-light mb-4 leading-relaxed">
+        <h1 className="text-4xl mb-4 font-advercase-regular font-light leading-relaxed">
           hola, soy{" "}
-          <span className="font-bold relative group cursor-pointer">
-            remiel*
+          <span className="font-advercase-bold group">
+            remiel<span className="text-orange-500">*</span>
           </span>
         </h1>
         <p className="text-shadow-muted-foreground font-semibold text-justify  text-2XL leading-relaxed">

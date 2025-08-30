@@ -17,6 +17,18 @@ const secondaryFont = localFont({
   variable: "--font-secondary",
 });
 
+const advercaseFontBold = localFont({
+  src: "./fonts/AdvercaseFontBold.otf",
+  display: "swap",
+  variable: "--font-advercase-bold",
+});
+
+const advercaseFontRegular = localFont({
+  src: "./fonts/AdvercaseFontRegular.otf",
+  display: "swap",
+  variable: "--font-advercase-regular",
+});
+
 export const metadata: Metadata = {
   title: "remiel - engineer at the intersection of design & development",
   description: "Portfolio of remiel - engineer, designer, and developer",
@@ -32,7 +44,12 @@ export default function RootLayout({
     <html
       lang="en"
       suppressHydrationWarning
-      className={`${primaryFont.variable} ${secondaryFont.variable}`}
+      className={`
+        ${primaryFont.variable}
+        ${secondaryFont.variable}
+        ${advercaseFontBold.variable}
+        ${advercaseFontRegular.variable}
+      `}
     >
       <head />
       <body>
