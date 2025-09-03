@@ -183,3 +183,18 @@
   font-family: var(--font-advercase-regular);
 }
 
+.font-inter {
+  font-family: var(--font-inter);
+}
+
+.font-geist-sans {
+  font-family: var(--font-geist, "Geist Sans", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif);
+  font-weight: 400;
+}
+
+.font-geist-mono {
+  font-family: var(--font-geist-mono, ui-monospace, SFMono-Regular, Menlo, Monaco, "Roboto Mono", "Helvetica Neue", monospace);
+  font-weight: 400;
+}
+
+

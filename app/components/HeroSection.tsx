@@ -15,17 +15,17 @@ export default function HeroSection({ isLoaded }: HeroSectionProps) {
       >
         <h1 className="text-4xl mb-4 font-advercase-regular font-light leading-relaxed">
           hola, soy{" "}
-          <span className="font-advercase-bold group">
+          <span className="font-bold group">
             remiel<span className="text-orange-500">*</span>
           </span>
         </h1>
-        <p className="text-shadow-muted-foreground font-semibold text-justify  text-2XL leading-relaxed">
+        <p className="text-shadow-muted-foreground  text-justify text-2XL leading-relaxed font-geist-sans">
           a fullstack developer, *designer at heart, and ex microsoft student
           ambassador. i build cool stuff, explain tech without the jargon, and
           occasionally wonder if my Wi-Fi antenna research was just the universe
           trolling me.
         </p>
-        <p className="text-shadow-muted-foreground font-semibold text-justify  text-2XL leading-relaxed">
+        <p className="text-shadow-muted-foreground text-justify text-2XL leading-relaxed font-geist-sans font-light">
           you can find me across the web sharing projects, ideas, and lessons
           learned. whether it's code on github, thoughts on my blog, or updates
           on linkedin, these links are the best way to connect.

@@ -1,6 +1,7 @@
 import type React from "react";
 import type { Metadata } from "next";
 import localFont from "next/font/local";
+import { Inter } from "next/font/google";
 import { ThemeProvider } from "@/components/theme-provider";
 import "./globals.css";
 
@@ -29,6 +30,15 @@ const advercaseFontRegular = localFont({
   variable: "--font-advercase-regular",
 });
 
+// Google Inter font for body/paragraphs
+const interFont = Inter({
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-inter",
+});
+
+// (previously registered fonts removed)
+
 export const metadata: Metadata = {
   title: "remiel - engineer at the intersection of design & development",
   description: "Portfolio of remiel - engineer, designer, and developer",
@@ -49,6 +59,8 @@ export default function RootLayout({
         ${secondaryFont.variable}
         ${advercaseFontBold.variable}
         ${advercaseFontRegular.variable}
+        ${interFont.variable}
+      
       `}
     >
       <head />
