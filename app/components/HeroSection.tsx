@@ -13,13 +13,13 @@ export default function HeroSection({ isLoaded }: HeroSectionProps) {
           isLoaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
         }`}
       >
-        <h1 className="text-5xl mb-4 font-advercase-regular font-light leading-relaxed">
+        <h1 className="text-3xl sm:text-5xl mb-4 font-advercase-regular font-light leading-relaxed">
           hola, soy{" "}
           <span className="font-bold group">
             remiel<span className="text-orange-500">*</span>
           </span>
         </h1>
-        <p className="text-shadow-muted-foreground  text-0.5xl  text-justify leading-relaxed">
+        <p className="text-shadow-muted-foreground text-sm sm:text-base text-justify leading-relaxed">
           a fullstack developer, *designer at heart, and ex microsoft student
           ambassador. i build cool stuff, explain tech without the jargon, and
           occasionally wonder if my Wi-Fi antenna research was just the universe
@@ -33,7 +33,7 @@ export default function HeroSection({ isLoaded }: HeroSectionProps) {
           isLoaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
         }`}
       >
-        <div className="flex flex-wrap gap-4 font-semibold text-1xl text-green-600">
+        <div className="flex flex-wrap gap-3 font-semibold text-sm sm:text-base text-green-600">
           <a href="https://drive.google.com/file/d/1iV-bwfZufebtiIIT98ZEZFaEtS7VDDCV/view?usp=sharing">
             resume
           </a>
