@@ -13,22 +13,19 @@ export default function HeroSection({ isLoaded }: HeroSectionProps) {
           isLoaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
         }`}
       >
-        <h1 className="text-4xl mb-4 font-advercase-regular font-light leading-relaxed">
+        <h1 className="text-5xl mb-4 font-advercase-regular font-light leading-relaxed">
           hola, soy{" "}
           <span className="font-bold group">
             remiel<span className="text-orange-500">*</span>
           </span>
         </h1>
-        <p className="text-shadow-muted-foreground  text-justify text-2XL leading-relaxed font-geist-sans">
+        <p className="text-shadow-muted-foreground  text-0.5xl  text-justify leading-relaxed">
           a fullstack developer, *designer at heart, and ex microsoft student
           ambassador. i build cool stuff, explain tech without the jargon, and
           occasionally wonder if my Wi-Fi antenna research was just the universe
-          trolling me.
-        </p>
-        <p className="text-shadow-muted-foreground text-justify text-2XL leading-relaxed font-geist-sans font-light">
-          you can find me across the web sharing projects, ideas, and lessons
-          learned. whether it's code on github, thoughts on my blog, or updates
-          on linkedin, these links are the best way to connect.
+          trolling me. you can find me across the web sharing projects, ideas,
+          and lessons learned. whether it's code on github, thoughts on my blog,
+          or updates on linkedin, these links are the best way to connect.
         </p>
       </div>
       <div
@@ -38,7 +35,7 @@ export default function HeroSection({ isLoaded }: HeroSectionProps) {
       >
         <div className="flex flex-wrap gap-4 font-semibold text-1xl text-green-600">
           <a href="https://drive.google.com/file/d/1iV-bwfZufebtiIIT98ZEZFaEtS7VDDCV/view?usp=sharing">
-            resume/cv
+            resume
           </a>
           <a href="https://jaswanthremiel.medium.com">blog</a>
           <Link href="/guestbook">guestbook</Link>

@@ -40,6 +40,9 @@ const interFont = Inter({
 // (previously registered fonts removed)
 
 export const metadata: Metadata = {
+  icons: {
+    icon: "/favicon.ico",
+  },
   title: "remiel - engineer at the intersection of design & development",
   description: "Portfolio of remiel - engineer, designer, and developer",
   generator: "v0.app",
@@ -60,6 +63,7 @@ export default function RootLayout({
         ${advercaseFontBold.variable}
         ${advercaseFontRegular.variable}
         ${interFont.variable}
+        dark
       
       `}
     >
