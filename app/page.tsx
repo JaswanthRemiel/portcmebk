@@ -113,33 +113,32 @@ export default function Portfolio() {
   return (
     <div className="min-h-screen bg-background text-foreground scroll-smooth">
       <Header />
-      
-      <main className="max-w-3xl mx-auto px-6 pb-16">
+
+      <main className="max-w-4xl mx-auto px-6 pb-16">
         <HeroSection isLoaded={isLoaded} />
-        
-        <ListeningSection 
-          isLoaded={isLoaded} 
-          songs={songs} 
-          currentSongIndex={currentSongIndex} 
+        <ListeningSection
+          isLoaded={isLoaded}
+          songs={songs}
+          currentSongIndex={currentSongIndex}
         />
-        
+
         <WritingsSection isLoaded={isLoaded} />
-        
+
         <ProjectsSection isLoaded={isLoaded} />
-        
-        <WorkExperienceSection 
-          isLoaded={isLoaded} 
-          workExperience={workExperience} 
-          expandedWork={expandedWork} 
-          toggleWorkExpansion={toggleWorkExpansion} 
-        />
-        
-        <CapturesSection isLoaded={isLoaded} />
-        
-        <ContactSection 
-          isLoaded={isLoaded} 
-          visitorTime={visitorTime} 
-          formatTime={formatTime} 
+
+        {/* <WorkExperienceSection
+          isLoaded={isLoaded}
+          workExperience={workExperience}
+          expandedWork={expandedWork}
+          toggleWorkExpansion={toggleWorkExpansion}
+        /> */}
+
+        {/* <CapturesSection isLoaded={isLoaded} /> */}
+
+        <ContactSection
+          isLoaded={isLoaded}
+          visitorTime={visitorTime}
+          formatTime={formatTime}
         />
       </main>
     </div>

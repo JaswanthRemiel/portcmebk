@@ -15,8 +15,8 @@ export default function ContactSection({
         isLoaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
       }`}
     >
-      <h2 className="text-sm font-medium mb-4 text-foreground">contact</h2>
-      <div className="flex flex-wrap gap-4 sm:gap-6 text-sm mb-4">
+      <h2 className="text-lg font-medium mb-4 text-foreground">contact</h2>
+      <div className="flex text-l flex-wrap gap-4 sm:gap-6 mb-2">
         <a
           href="https://twitter.com/jaswanthremiel"
           target="_blank"
@@ -42,13 +42,13 @@ export default function ContactSection({
           linkedin
         </a>
         <a
-          href="mailto:jaswanthremiel@gmail.com"
+          href="mailto:work.remiel@remiel.work"
           className="text-muted-foreground hover:text-foreground transition-colors"
         >
           say hello
         </a>
       </div>
-      <div className="text-xs text-muted-foreground">
+      <div className="text-l text-muted-foreground">
         <span className="font-medium">your time:</span>{" "}
         {formatTime(visitorTime)}
       </div>

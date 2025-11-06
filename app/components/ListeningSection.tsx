@@ -20,7 +20,7 @@ export default function ListeningSection({
         isLoaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
       }`}
     >
-      <h2 className="text-sm font-medium mb-2 text-foreground">listening to</h2>
+      <h2 className="text-l font-medium mb-2 text-foreground">listening to</h2>
 
       <div className="hidden sm:flex sm:flex-row sm:gap-6">
         {songs.map((song, index) => (
@@ -35,7 +35,7 @@ export default function ListeningSection({
               href={song.url}
               target="_blank"
               rel="noopener noreferrer"
-              className="font-medium text-sm hover:text-green-600 dark:hover:text-green-400 transition-colors"
+              className="font-medium text-medium hover:text-green-600 dark:hover:text-green-400 transition-colors"
             >
               {song.title}
             </a>
